@@ -1,0 +1,80 @@
+{
+  "casos_validos": [
+    {
+      "id_reserva": 1,
+      "id_sala": 10,
+      "id_usuario": 201,
+      "fecha": "2026-05-10",
+      "hora_inicio": "08:00",
+      "hora_fin": "10:00",
+      "personas": 25,
+      "estado": "pendiente"
+    },
+    {
+      "id_reserva": 2,
+      "id_sala": 5,
+      "id_usuario": 305,
+      "fecha": "2026-05-11",
+      "hora_inicio": "14:00",
+      "hora_fin": "16:00",
+      "personas": 15,
+      "estado": "confirmada"
+    },
+    {
+      "id_reserva": 3,
+      "id_sala": 8,
+      "id_usuario": 102,
+      "fecha": "2026-05-12",
+      "hora_inicio": "07:00",
+      "hora_fin": "09:00",
+      "personas": 40,
+      "estado": "cancelada"
+    }
+  ],
+  "casos_invalidos": [
+    {
+      "descripcion": "hora_fin menor que hora_inicio",
+      "id_reserva": 4,
+      "id_sala": 2,
+      "id_usuario": 100,
+      "fecha": "2026-05-12",
+      "hora_inicio": "15:00",
+      "hora_fin": "13:00",
+      "personas": 10,
+      "estado": "pendiente"
+    },
+    {
+      "descripcion": "personas con valor 0 - fuera del rango permitido",
+      "id_reserva": 5,
+      "id_sala": 3,
+      "id_usuario": 102,
+      "fecha": "2026-05-13",
+      "hora_inicio": "09:00",
+      "hora_fin": "11:00",
+      "personas": 0,
+      "estado": "pendiente"
+    },
+    {
+      "descripcion": "estado con valor no permitido",
+      "id_reserva": 6,
+      "id_sala": 7,
+      "id_usuario": 200,
+      "fecha": "2026-05-14",
+      "hora_inicio": "10:00",
+      "hora_fin": "12:00",
+      "personas": 20,
+      "estado": "en_espera"
+    },
+    {
+      "descripcion": "fecha con formato incorrecto",
+      "id_reserva": 7,
+      "id_sala": 1,
+      "id_usuario": 300,
+      "fecha": "14-05-2026",
+      "hora_inicio": "07:00",
+      "hora_fin": "09:00",
+      "personas": 5,
+      "estado": "pendiente"
+    }
+  ]
+}
