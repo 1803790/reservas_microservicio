@@ -12,14 +12,11 @@ de Software.
 ```
 SERVI/
 ├── app/
-│   ├── __init__.py
 │   ├── main.py
 │   ├── db.py
 │   ├── models/
-│   │   ├── __init__.py
 │   │   └── laboratorios.py
 │   └── schemas/
-│       ├── __init__.py
 │       └── laboratorios.py
 ├── datos_prueba.json
 ├── .gitignore
